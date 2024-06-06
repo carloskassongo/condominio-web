@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-CondominioApplication<Condominio>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "app.condominio.CondominioApplication",
+            "projectName": "Condominio",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
