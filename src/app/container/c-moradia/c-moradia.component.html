@@ -1,0 +1,107 @@
+<main role="main">
+  <h2>Cadastro da Moradia</h2>
+  <p>Ao salvar, as informações da moradia atual serão atualizadas.</p>
+  <form>
+      <div class="card">
+          <div class="card-header">
+              Informações principais
+          </div>
+          <div class="card-body">
+              <div class="form-row">
+                  <div class="form-group col-md-2">
+                      <label for="bloco">Bloco</label>
+                      <select id="bloco" class="form-control">
+                          <option selected>U</option>
+                          <!-- Adicione mais opções aqui -->
+                      </select>
+                  </div>
+                  <div class="form-group col-md-2">
+                      <label for="sigla">Sigla</label>
+                      <input type="text" class="form-control" id="sigla" value="301">
+                  </div>
+                  <div class="form-group col-md-4">
+                      <label for="tipo">Tipo</label>
+                      <select id="tipo" class="form-control">
+                          <option selected>Apartamento</option>
+                          <!-- Adicione mais opções aqui -->
+                      </select>
+                  </div>
+                  <div class="form-group col-md-4">
+                      <label for="vagas">Vagas de Garagem</label>
+                      <input type="number" class="form-control" id="vagas" value="1">
+                  </div>
+              </div>
+              <div class="form-row">
+                  <div class="form-group col-md-4">
+                      <label for="matricula">Matrícula</label>
+                      <input type="text" class="form-control" id="matricula" placeholder="Nº de matrícula do imóvel">
+                  </div>
+                  <div class="form-group col-md-4">
+                      <label for="fracao">Fração Ideal</label>
+                      <input type="text" class="form-control" id="fracao" value="0,0621">
+                  </div>
+                  <div class="form-group col-md-4">
+                      <label for="area">Área</label>
+                      <input type="text" class="form-control" id="area" value="56,5802">
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="card">
+          <div class="card-header">
+              Condôminos relacionados
+          </div>
+          <div class="card-body">
+              <div class="form-row">
+                  <div class="form-group col-md-4">
+                      <label for="condomino">Condômino</label>
+                      <select id="condomino" class="form-control">
+                          <option selected>Steffan Martins Alves</option>
+                          <option>Selecione</option>
+                          <!-- Adicione mais opções aqui -->
+                      </select>
+                  </div>
+                  <div class="form-group col-md-4">
+                      <label for="tipo-participacao">Tipo e Participação</label>
+                      <select id="tipo-participacao" class="form-control">
+                          <option selected>Proprietário</option>
+                          <option>Quota</option>
+                          <!-- Adicione mais opções aqui -->
+                      </select>
+                  </div>
+                  <div class="form-group col-md-2">
+                      <label for="percentual">Percentual</label>
+                      <input type="text" class="form-control" id="percentual" value="100,0">
+                  </div>
+                  <div class="form-group col-md-2">
+                      <label for="data-inicial">Data Inicial</label>
+                      <input type="text" class="form-control" id="data-inicial" value="01/03/2012">
+                  </div>
+              </div>
+              <div class="form-row">
+                  <div class="form-group col-md-4">
+                      <select class="form-control">
+                          <option selected>Selecione</option>
+                          <!-- Adicione mais opções aqui -->
+                      </select>
+                  </div>
+                  <div class="form-group col-md-4">
+                      <select class="form-control">
+                          <option selected>Selecione</option>
+                          <!-- Adicione mais opções aqui -->
+                      </select>
+                  </div>
+                  <div class="form-group col-md-2">
+                      <input type="text" class="form-control" placeholder="%">
+                  </div>
+                  <div class="form-group col-md-2">
+                      <input type="text" class="form-control" placeholder="dd/mm/aaaa">
+                  </div>
+              </div>
+              <button type="button" class="btn btn-secondary btn-sm">+ Nova relação</button>
+          </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Salvar</button>
+      <button type="button" class="btn btn-secondary">Cancelar</button>
+  </form>
+</main>

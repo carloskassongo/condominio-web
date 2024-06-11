@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand" href="#">Condomínio App</a>
+  <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+              <a class="nav-link" routerLink="/register">Registrar</a>
+          </li>
+      </ul>
+  </div>
+  <button class="btn btn-outline-light ml-2" routerLink="/login">Entrar</button>
+</nav>
+
+<div class="container">
+  <div class="row justify-content-center">
+      <div class="col-md-6">
+          <h2 class="text-center">Criar cadastro</h2>
+          <p class="text-center">Obrigado por escolher o Condomínio App! Se você é síndico, preencha os dados abaixo para se registrar e gerenciar um condomínio.</p>
+          <div class="card">
+              <form>
+                  <div class="form-group">
+                      <label for="nome">Nome</label>
+                      <input type="text" class="form-control" id="nome" placeholder="Carlos">
+                  </div>
+                  <div class="form-group">
+                      <label for="sobrenome">Sobrenome</label>
+                      <input type="text" class="form-control" id="sobrenome" placeholder="Kassongo">
+                  </div>
+                  <div class="form-group">
+                      <label for="email">E-mail</label>
+                      <input type="email" class="form-control" id="email" placeholder="carloskassongo@gmail.com">
+                  </div>
+                  <div class="form-group">
+                      <label for="usuario">Usuário</label>
+                      <input type="text" class="form-control" id="usuario" placeholder="Escolha seu usuário">
+                  </div>
+                  <div class="form-group">
+                      <label for="senha">Senha</label>
+                      <input type="password" class="form-control" id="senha" placeholder="Escolha sua senha">
+                  </div>
+                  <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="termos">
+                      <label class="form-check-label" for="termos">Declaro que li e concordo com os <a href="#">Termos de Uso</a>.</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Registrar</button>
+                  <button type="button" class="btn btn-secondary">Cancelar</button>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="footer">
+  &copy; 2018 - Condomínio App
+</div>

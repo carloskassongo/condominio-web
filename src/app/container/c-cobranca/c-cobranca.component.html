@@ -1,0 +1,139 @@
+<main role="main">
+  <h2>Cadastro da Cobrança</h2>
+  <p>Ao salvar, as informações da cobrança atual serão atualizadas.</p>
+  <form>
+      <div class="card">
+          <div class="card-header">
+              Informações principais
+          </div>
+          <div class="card-body">
+              <div class="form-row">
+                  <div class="form-group col-md-3">
+                      <label for="data-emissao">Data de emissão</label>
+                      <input type="date" class="form-control" id="data-emissao" value="2018-09-01">
+                  </div>
+                  <div class="form-group col-md-3">
+                      <label for="numero">Número</label>
+                      <input type="text" class="form-control" id="numero" value="2018">
+                  </div>
+                  <div class="form-group col-md-3">
+                      <label for="motivo-emissao">Motivo da emissão</label>
+                      <select id="motivo-emissao" class="form-control">
+                          <option selected>Normal</option>
+                          <!-- Adicione mais opções aqui -->
+                      </select>
+                  </div>
+                  <div class="form-group col-md-3">
+                      <label for="data-vencimento">Data de vencimento</label>
+                      <input type="date" class="form-control" id="data-vencimento" value="2018-10-10">
+                  </div>
+              </div>
+              <div class="form-row">
+                  <div class="form-group col-md-3">
+                      <label for="moradia">Moradia</label>
+                      <select id="moradia" class="form-control">
+                          <option selected>U - 202</option>
+                          <!-- Adicione mais opções aqui -->
+                      </select>
+                  </div>
+                  <div class="form-group col-md-6">
+                      <label for="descricao">Descrição</label>
+                      <input type="text" class="form-control" id="descricao" value="Mensalidade do condomínio">
+                  </div>
+                  <div class="form-group col-md-3">
+                      <label for="multa-atraso">Multa por atraso</label>
+                      <div class="input-group">
+                          <input type="text" class="form-control" id="multa-atraso" value="2,0">
+                          <div class="input-group-append">
+                              <span class="input-group-text">%</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="form-row">
+                  <div class="form-group col-md-3">
+                      <label for="juros-atraso">Juros por atraso</label>
+                      <div class="input-group">
+                          <input type="text" class="form-control" id="juros-atraso" value="1,0">
+                          <div class="input-group-append">
+                              <span class="input-group-text">% ao mês</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="card">
+          <div class="card-header">
+              Valores
+          </div>
+          <div class="card-body">
+              <div class="form-row">
+                  <div class="form-group col-md-2">
+                      <label for="valor">Valor</label>
+                      <input type="text" class="form-control" id="valor" value="130,00">
+                  </div>
+                  <div class="form-group col-md-2">
+                      <label for="descontos">Descontos</label>
+                      <input type="text" class="form-control" id="descontos" value="0,00">
+                  </div>
+                  <div class="form-group col-md-2">
+                      <label for="abatimentos">Abatimentos</label>
+                      <input type="text" class="form-control" id="abatimentos" value="0,00">
+                  </div>
+                  <div class="form-group col-md-2">
+                      <label for="outras-deducoes">Outras deduções</label>
+                      <input type="text" class="form-control" id="outras-deducoes" value="0,00">
+                  </div>
+                  <div class="form-group col-md-2">
+                      <label for="juros">Juros</label>
+                      <input type="text" class="form-control" id="juros" value="1,52">
+                  </div>
+                  <div class="form-group col-md-2">
+                      <label for="multa">Multa</label>
+                      <input type="text" class="form-control" id="multa" value="2,60">
+                  </div>
+              </div>
+              <div class="form-row">
+                  <div class="form-group col-md-2">
+                      <label for="outros-acrescimos">Outros acréscimos</label>
+                      <input type="text" class="form-control" id="outros-acrescimos" value="0,00">
+                  </div>
+                  <div class="form-group col-md-2">
+                      <label for="total">Total</label>
+                      <input type="text" class="form-control" id="total" value="134,12" readonly>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="card">
+          <div class="card-header">
+              Acompanhamento
+          </div>
+          <div class="card-body">
+              <div class="form-row">
+                  <div class="form-group col-md-3">
+                      <label for="situacao">Situação</label>
+                      <select id="situacao" class="form-control">
+                          <option selected>Normal</option>
+                          <!-- Adicione mais opções aqui -->
+                      </select>
+                  </div>
+                  <div class="form-group col-md-3">
+                      <label for="data-recebimento">Data de recebimento</label>
+                      <input type="date" class="form-control" id="data-recebimento">
+                  </div>
+                  <div class="form-group col-md-3">
+                      <label for="motivo-baixa">Motivo da baixa</label>
+                      <select id="motivo-baixa" class="form-control">
+                          <option selected>Selecione</option>
+                          <!-- Adicione mais opções aqui -->
+                      </select>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Salvar</button>
+      <button type="button" class="btn btn-secondary">Cancelar</button>
+  </form>
+</main>
